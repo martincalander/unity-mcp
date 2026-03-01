@@ -36,7 +36,7 @@ namespace MCPForUnity.Editor.Helpers
 
         public static void Info(string message, bool always = true)
         {
-            if (!always && !IsDebugEnabled()) return;
+            if (!IsDebugEnabled()) return;
             UnityEngine.Debug.Log($"{InfoPrefix} {message}");
         }
 
